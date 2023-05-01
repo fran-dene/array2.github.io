@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/cs/style.css" rel="stylesheet">
+    <title>Inmobiliaria</title>
+</head>
+<body>
+    <nav>
+        <p>Dream house</p>
+    </nav>
+
+    <header>
+        <div>
+            <h1>Inmobiliaria Dream house</h1>
+        </div>
+    </header>
+
+    <div class="searcher">
+        <div class="rooms">
+            <p>Cantidad de cuartos</p>
+            <input type="number" id="input-room">
+        </div>
+        <div class="meters">
+            <p>Metros cuadrados</p>
+            <div class="meters-limit">
+                <div>
+                    <p>Desde:</p>
+                    <input type="number" id="input-m1">
+                </div>
+                <div>
+                    <p>Hasta:</p>
+                    <input type="number" id="input-m2">
+                </div>
+            </div>
+        </div>
+        <button id="btn-search" class="btn">Buscar</button>
+    </div>
+
+    <div class="total-section">
+        <p id="total">Total:</p>
+        <p id="count"></p>
+    </div>
+
+    <div id="main-id-section" class="main-section">
+
+    </div>
+
+    <footer>
+        <i class="fas fa-igloo"></i>
+        <p>Dream house</p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/b530310408.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
