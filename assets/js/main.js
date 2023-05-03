@@ -91,6 +91,7 @@ for (let propiedad of propiedades) {
 }
 
 mainSection.innerHTML = init1;
+count1.innerHTML = propiedades.length;
 
 /*Filter functionality*/
 
@@ -98,6 +99,9 @@ btnSearch.addEventListener( 'click', (event) => {
   let html = '';
   let count = 0;
   for (let propiedad of propiedades) {
+    if (inputRoom.value == '' || inputMeters1.value == '' || inputMeters2.value == ''){
+      return alert('Faltan campos por llenar')
+    }
     if (propiedad.rooms == inputRoom.value
       && (between(propiedad.m,inputMeters1.value,inputMeters2.value))) {
         html +=templateInfo(propiedad)
